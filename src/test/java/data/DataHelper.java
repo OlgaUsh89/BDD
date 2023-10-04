@@ -26,7 +26,7 @@ public class DataHelper {
     }
 
     public static int generateValidAmount(int balance) {
-        return new Random().nextInt(Math.abs(balance)) +1;
+        return new Random().nextInt(Math.abs(balance)) + 1;
     }
 
     public static int generateInvalidAmount(int balance) {
@@ -38,11 +38,13 @@ public class DataHelper {
     public static class VerificationCode {
         String code;
     }
+
     @Value
     public static class CardInfo {
         String cardNumber;
         String testId;
     }
+
     @Value
     public static class AuthInfo {
         String login;
